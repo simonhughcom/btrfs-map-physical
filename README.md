@@ -20,10 +20,10 @@ FILE OFFSET  EXTENT TYPE  LOGICAL SIZE  LOGICAL OFFSET  PHYSICAL SIZE  DEVID  PH
 1610612736   prealloc     268435456     4593811456      268435456      1      5675941888
 ```
 
-1. Note the first physical offset returned by this tool. In this example, we
+3. Note the first physical offset returned by this tool. In this example, we
    use `4009762816`
-2. Get the pagesize with `getconf PAGESIZE`
-3. To compute the resume_offset value, divide the physical offset by the
+4. Get the pagesize with `getconf PAGESIZE`
+5. To compute the resume_offset value, divide the physical offset by the
    pagesize. In this example, it is `4009762816 / 4096 = 978946`
 
 See [Arch Wiki](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file_on_Btrfs) for more information
