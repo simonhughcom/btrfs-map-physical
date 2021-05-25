@@ -28,7 +28,7 @@ FILE OFFSET  EXTENT TYPE  LOGICAL SIZE  LOGICAL OFFSET  PHYSICAL SIZE  DEVID  PH
 6. Set the `resume=swap_device` and `resume_offset=swap_file_offset` kernel
    parameters.
    For example, for grub: 
-    Add `GRUB_CMDLINE_LINUX="resume=UUID=ROOT_UUID resume_offset=RESUME_OFFSET`
+    Add `GRUB_CMDLINE_LINUX="resume=UUID=ROOT_UUID resume_offset=RESUME_OFFSET"`
     in `/etc/default/grub` and then regenerate the grub configuration.
 
 See [Arch Wiki](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file_on_Btrfs) for more information
